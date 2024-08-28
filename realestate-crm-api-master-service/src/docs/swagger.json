@@ -1,0 +1,79 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Telepathy Apis",
+    "description": "Api Documentation is here",
+    "contact": {
+      "name": "API Support",
+      "email": "zahid@telepathyinfotech.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5001",
+      "description": "Master Services"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Language Services",
+      "description": "Retrieve a list of countries."
+    }   
+  ],
+  "securityDefinitions": {},
+  "paths": {  
+    "/master/dropdown/country": {
+      "get": {
+        "tags":["Country"],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "parameters": [
+          {
+            "name": "x-api-version",
+            "in": "header",
+            "required": true,
+            "type": "number",
+            "default": "1.0.0",
+            "description": "api version"
+          },
+          {
+            "name": "accept-language",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["en", "ar", "hi"],
+              "default": "en"
+            },
+            "description": "user language"
+          },
+          {
+            "name": "x-platform",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["web", "ios", "android"],
+              "default": "web"
+            },
+            "description": "from which device you are using"
+          }
+        ]
+       
+      }
+    }
+ 
+  
+  }
+}

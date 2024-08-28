@@ -1,0 +1,57 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Unit test coverage
+coverage/
+
+# Production build files (if applicable)
+dist/
+
+# Development build files (if applicable)
+build/
+
+# Custom configuration files (if any)
+config.js
+config/*.json  # Example: Exclude all JSON configuration files in a config directory
+
+# Ignore local development files (optional)
+*.local.json
+
+# Ignore development specific configuration (optional)
+dev-config.js
+
+# Ignore sensitive information (example)
+secrets.json
+
+# Ignore debugging files (optional)
+debug.log
+
+# app.log & access.log have history of api calling
+access.log
+app.log
+
+# Ignore TypeScript build output (if using TypeScript)
+# Replace with your TypeScript output directory
+# dist/

@@ -1,0 +1,41 @@
+{
+  "name": "master-service",
+  "version": "1.0.0",
+  "description": "This is master service for reydiv product",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "nodemon dist/server.js",
+    "clean": "rm -rf dist"
+  },
+  "author": "dev-team",
+  "license": "ISC",
+  "dependencies": {
+    "@t3-oss/env-core": "^0.10.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.5.1",
+    "pino": "^9.3.1",
+    "pino-http": "^10.2.0",
+    "pino-pretty": "^11.2.1",
+    "swagger-autogen": "^2.23.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.11",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.3"
+  }
+}

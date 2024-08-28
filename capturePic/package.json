@@ -1,0 +1,22 @@
+{
+  "name": "telepathy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-webcam": "^0.8.2",
+    "nodemon": "^3.1.4",
+    "socket.io": "^4.7.5",
+    "ws": "^8.18.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8"
+  }
+}
